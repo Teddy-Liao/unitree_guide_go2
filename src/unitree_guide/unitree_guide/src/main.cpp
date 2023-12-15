@@ -60,7 +60,9 @@ int main(int argc, char **argv)
 #endif // COMPILE_WITH_SIMULATION
 
 #ifdef COMPILE_WITH_REAL_ROBOT
-    ioInter = new IOSDK();
+    ChannelFactory::Instance()->Init(0, argv[1]);
+    ioInter = new IOSDK(); // IOSDK.cpp 中定义了sendRecv，lowCmd，lowState等
+    // ioInter->Init();
     ctrlPlat = CtrlPlatform::REALROBOT;
 #endif // COMPILE_WITH_REAL_ROBOT
 
@@ -75,6 +77,10 @@ int main(int argc, char **argv)
 #ifdef ROBOT_TYPE_Go1
     ctrlComp->robotModel = new Go1Robot();
 #endif
+#ifdef ROBOT_TYPE_Go2
+    ctrlComp->robotModel = new Go2Robot();
+#endif
+
 
     ctrlComp->waveGen = new WaveGenerator(0.45, 0.5, Vec4(0, 0.5, 0.5, 0)); // Trot
     // ctrlComp->waveGen = new WaveGenerator(1.1, 0.75, Vec4(0, 0.25, 0.5, 0.75));  //Crawl, only for sim

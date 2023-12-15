@@ -15,6 +15,19 @@
     #ifdef ROBOT_TYPE_Go1
         #include "unitree_legged_sdk/unitree_legged_sdk.h"
     #endif  // ROBOT_TYPE_Go1
+    #ifdef ROBOT_TYPE_Go2
+        #include "unitree_legged_sdk/unitree_legged_sdk.h"//这里记得要包含unitree_legged_sdk
+        #include <iostream>
+        #include <stdio.h>
+        #include <stdint.h>
+        #include <math.h>
+        #include <unitree/robot/channel/channel_publisher.hpp>
+        #include <unitree/robot/channel/channel_subscriber.hpp>
+        #include <unitree/idl/go2/LowState_.hpp>
+        #include <unitree/idl/go2/LowCmd_.hpp>
+        #include <unitree/common/time/time_tool.hpp>
+        #include <unitree/common/thread/thread.hpp>
+    #endif  // ROBOT_TYPE_Go1
 #endif  // COMPILE_WITH_REAL_ROBOT
 
 struct UserValue{

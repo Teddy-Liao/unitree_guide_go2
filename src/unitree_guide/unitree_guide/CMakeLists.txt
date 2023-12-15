@@ -1,12 +1,12 @@
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.5)
 project(unitree_guide)
 
-set(ROBOT_TYPE Go1)         # The type of robot, support Go1 and A1 currently
+set(ROBOT_TYPE Go2)         # The type of robot, support Go1 and A1 currently
 set(PLATFORM arm64)         # The platform to compile, support amd64 and arm64
 
 set(CATKIN_MAKE ON)        # Use CATKIN_MAKE or not, ON or OFF
-set(SIMULATION OFF)         # Use Gazebo or not, ON or OFF
-set(REAL_ROBOT ON)          # Link real robot or not, ON or OFF
+set(SIMULATION ON)         # Use Gazebo or not, ON or OFF
+set(REAL_ROBOT OFF)          # Link real robot or not, ON or OFF
 set(DEBUG OFF)              # Use debug functions or not, ON or OFF
 set(MOVE_BASE OFF)               # Need move_base or not, ON or OFF 
 
@@ -21,6 +21,8 @@ if(${ROBOT_TYPE} STREQUAL "A1")
     add_definitions(-DROBOT_TYPE_A1)
 elseif(${ROBOT_TYPE} STREQUAL "Go1")
     add_definitions(-DROBOT_TYPE_Go1)
+elseif(${ROBOT_TYPE} STREQUAL "Go2")
+    add_definitions(-DROBOT_TYPE_Go2)
 else()
     message(FATAL_ERROR "[CMake ERROR] The ROBOT_TYPE is error")
 endif()
@@ -95,15 +97,38 @@ if(REAL_ROBOT)
         )
     elseif(${ROBOT_TYPE} STREQUAL "Go1")
         include_directories(
+            /usr/local/include/ddscxx 
+            /usr/local/include/iceoryx/v2.0.2 
             library/unitree_legged_sdk-3.8.0/include
         )
         if(${PLATFORM} STREQUAL "amd64")
             link_directories(
+                unitree_sdk2 ddsc ddscxx rt pthread
                 library/unitree_legged_sdk-3.8.0/lib/cpp/amd64
             )
         elseif(${PLATFORM} STREQUAL "arm64")
             link_directories(
+                unitree_sdk2 ddsc ddscxx rt pthread
                 library/unitree_legged_sdk-3.8.0/lib/cpp/arm64
+            )
+        endif()
+    elseif(${ROBOT_TYPE} STREQUAL "Go2")
+        include_directories(
+            /usr/local/include/ddscxx 
+            /usr/local/include/iceoryx/v2.0.2 
+            library/unitree_legged_sdk-3.8.0/include
+        )
+        if(${PLATFORM} STREQUAL "amd64")
+            link_directories(
+                unitree_sdk2 ddsc ddscxx rt pthread
+                library/unitree_legged_sdk-3.8.0/lib/cpp/amd64
+                library/unitree_sdk2/lib/x86_64
+            )
+        elseif(${PLATFORM} STREQUAL "arm64")
+            link_directories(
+                unitree_sdk2 ddsc ddscxx rt pthread
+                library/unitree_legged_sdk-3.8.0/lib/cpp/arm64
+                library/unitree_sdk2/lib/aarch64
             )
         endif()
     endif()
@@ -120,14 +145,17 @@ file(GLOB_RECURSE SRC_LIST
 )
 
 add_executable(junior_ctrl src/main.cpp ${SRC_LIST})
+
 if(CATKIN_MAKE)
     target_link_libraries(junior_ctrl ${catkin_LIBRARIES})
     add_dependencies(junior_ctrl ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 endif()
+
 if(DEBUG)
     target_include_directories(junior_ctrl PRIVATE ${Python2_INCLUDE_DIRS} ${Python2_NumPy_INCLUDE_DIRS})
     target_link_libraries(junior_ctrl Python2::Python Python2::NumPy)
 endif()
+
 if(REAL_ROBOT)
     if(${ROBOT_TYPE} STREQUAL "A1")
         if(${PLATFORM} STREQUAL "amd64")
@@ -136,9 +164,14 @@ if(REAL_ROBOT)
             target_link_libraries(junior_ctrl libunitree_legged_sdk_arm64.so)
         endif()
     elseif(${ROBOT_TYPE} STREQUAL "Go1")
-            target_link_libraries(junior_ctrl libunitree_legged_sdk.a)
+            target_link_libraries(junior_ctrl libunitree_legged_sdk.a libunitree_sdk2.a)
+    elseif(${ROBOT_TYPE} STREQUAL "Go2")
+            target_link_libraries(junior_ctrl libunitree_sdk2.a libunitree_legged_sdk.a) 
+            #在这里我所幸把Go1的静态库文件也链接进来了
     endif()
 endif()
+
+
 target_link_libraries(junior_ctrl -pthread lcm)
 
 if(NOT CATKIN_MAKE)

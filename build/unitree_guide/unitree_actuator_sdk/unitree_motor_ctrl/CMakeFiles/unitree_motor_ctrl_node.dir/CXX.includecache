@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_actuator_sdk/unitree_motor_ctrl/include/unitree_motor_ctrl/LSerial.h
+motor_ctrl.h
+/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_actuator_sdk/unitree_motor_ctrl/include/unitree_motor_ctrl/motor_ctrl.h
+windows.h
+-
+
+/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_actuator_sdk/unitree_motor_ctrl/include/unitree_motor_ctrl/motor_ctrl.h
+motor_msg.h
+/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_actuator_sdk/unitree_motor_ctrl/include/unitree_motor_ctrl/motor_msg.h
+stdint.h
+-
+
+/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_actuator_sdk/unitree_motor_ctrl/include/unitree_motor_ctrl/motor_msg.h
+stdint.h
+-
+
+/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_actuator_sdk/unitree_motor_ctrl/src/check.cpp
+stdio.h
+-
+errno.h
+-
+string.h
+-
+unistd.h
+-
+sys/time.h
+-
+LSerial.h
+/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_actuator_sdk/unitree_motor_ctrl/src/LSerial.h
+motor_ctrl.h
+/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_actuator_sdk/unitree_motor_ctrl/src/motor_ctrl.h
+

@@ -17,11 +17,11 @@ State_BalanceTest::State_BalanceTest(CtrlComponents *ctrlComp)
     _yawMax = 20 * M_PI / 180;
     _yawMin = -_yawMax;
 
-    _Kpp = Vec3(150, 150, 150).asDiagonal();
-    _Kdp = Vec3(25, 25, 25).asDiagonal();
+    _Kpp = Vec3(120, 120, 120).asDiagonal();//(120, 120, 120)
+    _Kdp = Vec3(25, 25, 25).asDiagonal();//(25, 25, 25)
 
-    _kpw = 200;
-    _Kdw = Vec3(30, 30, 30).asDiagonal();
+    _kpw = 40;//200
+    _Kdw = Vec3(4, 4, 4).asDiagonal();//(30, 30, 30)
 }
 
 void State_BalanceTest::enter(){
