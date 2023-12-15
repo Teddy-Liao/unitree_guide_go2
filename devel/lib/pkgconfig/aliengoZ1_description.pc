@@ -1,8 +1,0 @@
-prefix=/home/parallels/Projects/unitree_guide_ldt/devel
-
-Name: aliengoZ1_description
-Description: Description of aliengoZ1_description
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
