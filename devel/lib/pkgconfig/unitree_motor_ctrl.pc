@@ -1,0 +1,8 @@
+prefix=/home/parallels/Projects/unitree_guide_ldt/devel
+
+Name: unitree_motor_ctrl
+Description: Description of unitree_motor_ctrl
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
