@@ -5,8 +5,8 @@ set(ROBOT_TYPE Go2)         # The type of robot, support Go1 and A1 currently
 set(PLATFORM arm64)         # The platform to compile, support amd64 and arm64
 
 set(CATKIN_MAKE ON)        # Use CATKIN_MAKE or not, ON or OFF
-set(SIMULATION ON)         # Use Gazebo or not, ON or OFF
-set(REAL_ROBOT OFF)          # Link real robot or not, ON or OFF
+set(SIMULATION OFF)         # Use Gazebo or not, ON or OFF
+set(REAL_ROBOT ON)          # Link real robot or not, ON or OFF
 set(DEBUG OFF)              # Use debug functions or not, ON or OFF
 set(MOVE_BASE OFF)               # Need move_base or not, ON or OFF 
 

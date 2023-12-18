@@ -35,13 +35,12 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
+  "COMPILE_WITH_REAL_ROBOT"
   "COMPILE_WITH_ROS"
-  "COMPILE_WITH_SIMULATION"
   "ROBOT_TYPE_Go2"
   "ROSCONSOLE_BACKEND_LOG4CXX"
   "ROS_BUILD_SHARED_LIBS=1"
   "ROS_PACKAGE_NAME=\"unitree_guide\""
-  "RUN_ROS"
   )
 
 # The include file search paths:
@@ -51,6 +50,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/eigen3"
+  "/usr/local/include/ddscxx"
+  "/usr/local/include/iceoryx/v2.0.2"
+  "/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include"
   )
 
 # Targets to which this target links.

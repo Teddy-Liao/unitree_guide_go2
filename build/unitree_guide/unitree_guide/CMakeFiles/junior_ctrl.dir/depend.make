@@ -532,6 +532,13 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.c
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/src/FSM/State_FreeStand.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.cpp.o: /opt/ros/noetic/include/geometry_msgs/Point.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.cpp.o: /opt/ros/noetic/include/geometry_msgs/PointStamped.h
@@ -1829,6 +1836,13 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelCmd.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelState.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/unitree_joystick.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/src/interface/IOROS.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: /opt/ros/noetic/include/geometry_msgs/Quaternion.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: /opt/ros/noetic/include/geometry_msgs/Vector3.h
@@ -1903,6 +1917,13 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelCmd.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelState.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/unitree_joystick.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/src/interface/IOSDK.cpp
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/common/enumClass.h
@@ -1965,6 +1986,13 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o: /home/par
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/src/main.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o: /opt/ros/noetic/include/geometry_msgs/Point.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o: /opt/ros/noetic/include/geometry_msgs/PointStamped.h

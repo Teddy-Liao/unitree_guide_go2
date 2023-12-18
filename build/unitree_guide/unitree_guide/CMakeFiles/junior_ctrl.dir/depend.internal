@@ -533,6 +533,13 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.c
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/src/FSM/State_FreeStand.cpp
  /opt/ros/noetic/include/geometry_msgs/Point.h
  /opt/ros/noetic/include/geometry_msgs/PointStamped.h
@@ -1830,6 +1837,13 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelCmd.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelState.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/unitree_joystick.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/src/interface/IOROS.cpp
  /opt/ros/noetic/include/geometry_msgs/Quaternion.h
  /opt/ros/noetic/include/geometry_msgs/Vector3.h
@@ -1904,6 +1918,13 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelCmd.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelState.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/unitree_joystick.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/src/interface/IOSDK.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/common/enumClass.h
@@ -1966,6 +1987,13 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/src/main.cpp
  /opt/ros/noetic/include/geometry_msgs/Point.h
  /opt/ros/noetic/include/geometry_msgs/PointStamped.h

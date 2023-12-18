@@ -6,6 +6,18 @@
 #include <csignal>
 #include <sched.h>
 
+//ldt
+#include <stdio.h>
+#include <stdint.h>
+#include <math.h>
+#include <unitree/robot/channel/channel_publisher.hpp>
+#include <unitree/robot/channel/channel_subscriber.hpp>
+#include <unitree/idl/go2/LowState_.hpp>
+#include <unitree/idl/go2/LowCmd_.hpp>
+#include <unitree/common/time/time_tool.hpp>
+#include <unitree/common/thread/thread.hpp>
+
+
 #include "control/ControlFrame.h"
 #include "control/CtrlComponents.h"
 #include "Gait/WaveGenerator.h"
@@ -13,6 +25,8 @@
 
 #ifdef COMPILE_WITH_REAL_ROBOT
 #include "interface/IOSDK.h"
+using namespace unitree::common;
+using namespace unitree::robot;
 #endif // COMPILE_WITH_REAL_ROBOT
 
 #ifdef COMPILE_WITH_ROS
@@ -60,7 +74,7 @@ int main(int argc, char **argv)
 #endif // COMPILE_WITH_SIMULATION
 
 #ifdef COMPILE_WITH_REAL_ROBOT
-    ChannelFactory::Instance()->Init(0, argv[1]);
+    // ChannelFactory::Instance()->Init(0, argv[1]);
     ioInter = new IOSDK(); // IOSDK.cpp 中定义了sendRecv，lowCmd，lowState等
     // ioInter->Init();
     ctrlPlat = CtrlPlatform::REALROBOT;
