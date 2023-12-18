@@ -52,6 +52,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/eigen3"
   "/usr/local/include/ddscxx"
   "/usr/local/include/iceoryx/v2.0.2"
+  "/usr/local/include/unitree"
+  "/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/./library/unitree_sdk2/include"
   "/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include"
   )
 

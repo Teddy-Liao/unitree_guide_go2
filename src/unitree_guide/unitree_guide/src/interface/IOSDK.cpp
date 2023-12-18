@@ -146,26 +146,26 @@ void IOSDK::sendRecv(const LowlevelCmd *cmd, LowlevelState *state){
         _lowCmd.motor_cmd()[i].tau() = cmd->motorCmd[i].tau;
     }
 
-    for (int i(0); i < 12; ++i)
-    {
-        state->motorState[i].q = _lowState.motor_state()[i].q();
-        state->motorState[i].dq = _lowState.motor_state()[i].dq();
-        state->motorState[i].ddq = _lowState.motor_state()[i].ddq();
-        state->motorState[i].tauEst = _lowState.motor_state()[i].tau_est();
-        state->motorState[i].mode = _lowState.motor_state()[i].mode();
-    }
+    // for (int i(0); i < 12; ++i)
+    // {
+    //     state->motorState[i].q = _lowState.motor_state()[i].q();
+    //     state->motorState[i].dq = _lowState.motor_state()[i].dq();
+    //     state->motorState[i].ddq = _lowState.motor_state()[i].ddq();
+    //     state->motorState[i].tauEst = _lowState.motor_state()[i].tau_est();
+    //     state->motorState[i].mode = _lowState.motor_state()[i].mode();
+    // }
 
-    for (int i(0); i < 3; ++i)
-    {
-        state->imu.quaternion[i] = _lowState.imu_state().quaternion()[i];
-        state->imu.gyroscope[i] = _lowState.imu_state().gyroscope()[i];
-        state->imu.accelerometer[i] = _lowState.imu_state().accelerometer()[i];
-    }
+    // for (int i(0); i < 3; ++i)
+    // {
+    //     state->imu.quaternion[i] = _lowState.imu_state().quaternion()[i];
+    //     state->imu.gyroscope[i] = _lowState.imu_state().gyroscope()[i];
+    //     state->imu.accelerometer[i] = _lowState.imu_state().accelerometer()[i];
+    // }
 
-    state->imu.quaternion[3] = _lowState.imu_state().quaternion()[3];
-    cmdPanel->receiveHandle(&_lowState);
-    state->userCmd = cmdPanel->getUserCmd();
-    state->userValue = cmdPanel->getUserValue();
+    // state->imu.quaternion[3] = _lowState.imu_state().quaternion()[3];
+    // cmdPanel->receiveHandle(&_lowState);
+    // state->userCmd = cmdPanel->getUserCmd();
+    // state->userValue = cmdPanel->getUserValue();
     pthread_mutex_unlock(&lowlevelmutex);
 }
 
@@ -179,7 +179,7 @@ void IOSDK::LowCmdwriteHandler()
 
 void IOSDK::LowStateMessageHandler(const void *message)
 {
-    _lowState = *(unitree_go::msg::dds_::LowState_*)message;
+    // _lowState = *(unitree_go::msg::dds_::LowState_*)message;
 
     // cmdPanel->receiveHandle(&_lowState);
     // _state.userCmd = cmdPanel->getUserCmd();

@@ -27,7 +27,7 @@
         #include <unitree/idl/go2/LowCmd_.hpp>
         #include <unitree/common/time/time_tool.hpp>
         #include <unitree/common/thread/thread.hpp>
-    #endif  // ROBOT_TYPE_Go1
+    #endif  // ROBOT_TYPE_Go2
 #endif  // COMPILE_WITH_REAL_ROBOT
 
 struct UserValue{
