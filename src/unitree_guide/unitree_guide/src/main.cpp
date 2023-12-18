@@ -6,16 +6,6 @@
 #include <csignal>
 #include <sched.h>
 
-//ldt
-#include <stdio.h>
-#include <stdint.h>
-#include <math.h>
-#include <unitree/robot/channel/channel_publisher.hpp>
-#include <unitree/robot/channel/channel_subscriber.hpp>
-#include <unitree/idl/go2/LowState_.hpp>
-#include <unitree/idl/go2/LowCmd_.hpp>
-#include <unitree/common/time/time_tool.hpp>
-#include <unitree/common/thread/thread.hpp>
 
 
 #include "control/ControlFrame.h"
