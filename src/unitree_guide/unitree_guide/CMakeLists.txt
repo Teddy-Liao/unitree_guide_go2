@@ -114,7 +114,7 @@ if(REAL_ROBOT)
             /usr/local/include/iceoryx/v2.0.2
             /usr/local/include/unitree
             ./library/unitree_sdk2/include
-            library/unitree_legged_sdk-3.8.0/include
+            # library/unitree_legged_sdk-3.8.0/include
         )
         link_directories(/usr/local/lib)
     endif()

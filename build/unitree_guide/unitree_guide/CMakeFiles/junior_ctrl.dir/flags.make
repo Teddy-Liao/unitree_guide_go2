@@ -6,5 +6,5 @@ CXX_FLAGS =   -O3   -std=gnu++11
 
 CXX_DEFINES = -DCOMPILE_WITH_REAL_ROBOT -DCOMPILE_WITH_ROS -DROBOT_TYPE_Go2 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"unitree_guide\"
 
-CXX_INCLUDES = -I/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include -I/home/parallels/Projects/unitree_guide_ldt/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/local/include/ddscxx -I/usr/local/include/iceoryx/v2.0.2 -I/usr/local/include/unitree -I/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/./library/unitree_sdk2/include -I/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include 
+CXX_INCLUDES = -I/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include -I/home/parallels/Projects/unitree_guide_ldt/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/local/include/ddscxx -I/usr/local/include/iceoryx/v2.0.2 -I/usr/local/include/unitree -I/home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/./library/unitree_sdk2/include 
 

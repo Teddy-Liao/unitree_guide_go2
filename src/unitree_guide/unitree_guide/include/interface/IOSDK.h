@@ -7,19 +7,22 @@
 #include "interface/IOInterface.h"
 
 #ifndef ROBOT_TYPE_Go2
-#include "unitree_legged_sdk/unitree_legged_sdk.h"
+    #include "unitree_legged_sdk/unitree_legged_sdk.h"
 #else
-#include "unitree/robot/channel/channel_publisher.hpp"
-#include "unitree/robot/channel/channel_subscriber.hpp"
-#include "unitree/idl/go2/LowState_.hpp"
-#include "unitree/idl/go2/LowCmd_.hpp"
-#include "unitree/common/time/time_tool.hpp"
-#include "unitree/common/thread/thread.hpp"
-#include "unitree/robot/channel/channel_factory.hpp"
-using namespace unitree::common;
-using namespace unitree::robot;
-constexpr double PosStopF = (2.146E+9f);
-constexpr double VelStopF = (16000.0f);
+    #include "unitree/robot/channel/channel_publisher.hpp"
+    #include "unitree/robot/channel/channel_subscriber.hpp"
+    #include "unitree/idl/go2/LowState_.hpp"
+    #include "unitree/idl/go2/LowCmd_.hpp"
+    #include "unitree/common/time/time_tool.hpp"
+    #include "unitree/common/thread/thread.hpp"
+    #include "unitree/robot/channel/channel_factory.hpp"
+
+    #include <unitree/idl/go2/WirelessController_.hpp> //ldt
+
+    using namespace unitree::common;
+    using namespace unitree::robot;
+    constexpr double PosStopF = (2.146E+9f);
+    constexpr double VelStopF = (16000.0f);
 #endif
 
 #ifdef COMPILE_WITH_MOVE_BASE
@@ -45,6 +48,10 @@ private:
     pthread_mutex_t lowlevelmutex;
     unitree_go::msg::dds_::LowCmd_ _lowCmd{};
     unitree_go::msg::dds_::LowState_ _lowState{};
+
+    unitree_go::msg::dds_::WirelessController_ joystick;//ldt
+
+
     unitree::common::ThreadPtr lowCmdWriteThreadPtr;
     unitree::common::ThreadPtr highStateWriteThreadPtr;
     ChannelPublisherPtr<unitree_go::msg::dds_::LowCmd_> lowcmd_publisher;

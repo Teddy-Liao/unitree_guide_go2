@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/parallels/Projects/unitree_guide_ldt/build
 include unitree_legged_msgs/CMakeFiles/_unitree_legged_msgs_generate_messages_check_deps_HighCmd.dir/progress.make
 
 unitree_legged_msgs/CMakeFiles/_unitree_legged_msgs_generate_messages_check_deps_HighCmd:
-	cd /home/parallels/Projects/unitree_guide_ldt/build/unitree_legged_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py unitree_legged_msgs /home/parallels/Projects/unitree_guide_ldt/src/unitree_legged_msgs/msg/HighCmd.msg unitree_legged_msgs/BmsCmd:unitree_legged_msgs/LED
+	cd /home/parallels/Projects/unitree_guide_ldt/build/unitree_legged_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py unitree_legged_msgs /home/parallels/Projects/unitree_guide_ldt/src/unitree_legged_msgs/msg/HighCmd.msg unitree_legged_msgs/LED:unitree_legged_msgs/BmsCmd
 
 _unitree_legged_msgs_generate_messages_check_deps_HighCmd: unitree_legged_msgs/CMakeFiles/_unitree_legged_msgs_generate_messages_check_deps_HighCmd
 _unitree_legged_msgs_generate_messages_check_deps_HighCmd: unitree_legged_msgs/CMakeFiles/_unitree_legged_msgs_generate_messages_check_deps_HighCmd.dir/build.make

@@ -6,13 +6,23 @@
 
 #include "message/unitree_joystick.h"
 #include "interface/CmdPanel.h"
-#include "unitree_legged_sdk/comm.h"
+
+#ifndef ROBOT_TYPE_Go2
+    #include "unitree_legged_sdk/comm.h"
+#else
+    #include <unitree/idl/go2/WirelessController_.hpp> //ldt
+    #include <unitree/robot/client/client.hpp> //ldt
+#endif
 
 class WirelessHandle : public CmdPanel{
 public:
     WirelessHandle();
     ~WirelessHandle(){}
-    void receiveHandle(UNITREE_LEGGED_SDK::LowState *lowState);
+    #ifndef ROBOT_TYPE_Go2
+        void receiveHandle(UNITREE_LEGGED_SDK::LowState *lowState);
+    #else
+        void JoystickHandler(const void *message);
+    #endif
 private:
     xRockerBtnDataStruct _keyData;
 };

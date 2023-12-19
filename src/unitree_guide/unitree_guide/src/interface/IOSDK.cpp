@@ -56,10 +56,11 @@ IOSDK::IOSDK()
     lowstate_subscriber.reset(new ChannelSubscriber<unitree_go::msg::dds_::LowState_>(TOPIC_LOWSTATE));
     lowstate_subscriber->InitChannel(std::bind(&IOSDK::LowStateMessageHandler, this, std::placeholders::_1), 1);
     cmdPanel = new WirelessHandle();
-    pthread_mutex_init(&lowlevelmutex, NULL);
+    pthread_mutex_init(&lowlevelmutex, NULL); // 初始化一个互斥锁（Mutex）
 }
 #endif
 
+// 如果不是go2，_lowCmd采用unitree_legged_sdk接口
 #ifndef ROBOT_TYPE_Go2
 void IOSDK::sendRecv(const LowlevelCmd *cmd, LowlevelState *state){
     for(int i(0); i < 12; ++i){
@@ -110,10 +111,9 @@ void IOSDK::sendRecv(const LowlevelCmd *cmd, LowlevelState *state){
 
     _pub.publish(_joint_state);
 }
-
 #endif  // COMPILE_WITH_MOVE_BASE
 
-#else
+#else  //ROBOT_TYPE_Go2
 void IOSDK::InitLowCmd_dds(){
 
     _lowCmd.head()[0] = 0xFE;
@@ -132,12 +132,15 @@ void IOSDK::InitLowCmd_dds(){
     }
     return;
 }
+
+
 void IOSDK::sendRecv(const LowlevelCmd *cmd, LowlevelState *state){
 
     pthread_mutex_lock(&lowlevelmutex);
     for (int i(0); i < 12; ++i)
     {
-//        _lowCmd.motor_cmd()[i].mode() = cmd->motorCmd[i].mode;
+        // _lowCmd.motor_cmd()[i].mode() = cmd->motorCmd[i].mode;
+        // 这里注释掉是因为：go2实物的电机的伺服模式的方法是 mode=0x01，，而之前的都是0x10
         _lowCmd.motor_cmd()[i].mode() = (0x01);
         _lowCmd.motor_cmd()[i].q() = cmd->motorCmd[i].q;
         _lowCmd.motor_cmd()[i].dq() = cmd->motorCmd[i].dq;
@@ -146,28 +149,30 @@ void IOSDK::sendRecv(const LowlevelCmd *cmd, LowlevelState *state){
         _lowCmd.motor_cmd()[i].tau() = cmd->motorCmd[i].tau;
     }
 
-    // for (int i(0); i < 12; ++i)
-    // {
-    //     state->motorState[i].q = _lowState.motor_state()[i].q();
-    //     state->motorState[i].dq = _lowState.motor_state()[i].dq();
-    //     state->motorState[i].ddq = _lowState.motor_state()[i].ddq();
-    //     state->motorState[i].tauEst = _lowState.motor_state()[i].tau_est();
-    //     state->motorState[i].mode = _lowState.motor_state()[i].mode();
-    // }
+    for (int i(0); i < 12; ++i)
+    {
+        state->motorState[i].q = _lowState.motor_state()[i].q();
+        state->motorState[i].dq = _lowState.motor_state()[i].dq();
+        state->motorState[i].ddq = _lowState.motor_state()[i].ddq();
+        state->motorState[i].tauEst = _lowState.motor_state()[i].tau_est();
+        state->motorState[i].mode = _lowState.motor_state()[i].mode();
+    }
 
-    // for (int i(0); i < 3; ++i)
-    // {
-    //     state->imu.quaternion[i] = _lowState.imu_state().quaternion()[i];
-    //     state->imu.gyroscope[i] = _lowState.imu_state().gyroscope()[i];
-    //     state->imu.accelerometer[i] = _lowState.imu_state().accelerometer()[i];
-    // }
+    for (int i(0); i < 3; ++i)
+    {
+        state->imu.quaternion[i] = _lowState.imu_state().quaternion()[i];
+        state->imu.gyroscope[i] = _lowState.imu_state().gyroscope()[i];
+        state->imu.accelerometer[i] = _lowState.imu_state().accelerometer()[i];
+    }
 
-    // state->imu.quaternion[3] = _lowState.imu_state().quaternion()[3];
-    // cmdPanel->receiveHandle(&_lowState);
-    // state->userCmd = cmdPanel->getUserCmd();
-    // state->userValue = cmdPanel->getUserValue();
+    state->imu.quaternion[3] = _lowState.imu_state().quaternion()[3];
+    cmdPanel->JoystickHandler(&joystick);
+    state->userCmd = cmdPanel->getUserCmd();
+    state->userValue = cmdPanel->getUserValue();
     pthread_mutex_unlock(&lowlevelmutex);
 }
+
+
 
 
 // dds low state send
@@ -179,11 +184,12 @@ void IOSDK::LowCmdwriteHandler()
 
 void IOSDK::LowStateMessageHandler(const void *message)
 {
-    // _lowState = *(unitree_go::msg::dds_::LowState_*)message;
+    // 消息类型的强制转换
+    _lowState = *(unitree_go::msg::dds_::LowState_*)message;
 
-    // cmdPanel->receiveHandle(&_lowState);
-    // _state.userCmd = cmdPanel->getUserCmd();
-    // _state.userValue = cmdPanel->getUserValue();
+    // // cmdPanel->receiveHandle(&_lowState);
+    // // _state.userCmd = cmdPanel->getUserCmd();
+    // // _state.userValue = cmdPanel->getUserValue();
 }
 
 uint32_t IOSDK::crc32_core(uint32_t* ptr, uint32_t len)

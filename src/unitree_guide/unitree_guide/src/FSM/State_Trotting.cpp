@@ -41,8 +41,6 @@ State_Trotting::State_Trotting(CtrlComponents *ctrlComp)
     _KdSwing = Vec3(10, 10, 10).asDiagonal();
 #endif
 
-
-
     _vxLim = _robModel->getRobVelLimitX();
     _vyLim = _robModel->getRobVelLimitY();
     _wyawLim = _robModel->getRobVelLimitYaw();

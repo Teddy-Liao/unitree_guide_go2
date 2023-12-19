@@ -6,6 +6,9 @@
 
 #include <stdint.h>
 // 16b
+/*遥控器键值和按钮之间的对应关系由以下联合体定义。
+将获取到的键值赋给联合体中的value变量，
+再通过判断components 中的成员变量是否为1，可判断对应的按键是否被按下。*/
 typedef union {
     struct {
         uint8_t R1          :1;
@@ -32,11 +35,11 @@ typedef union {
 typedef struct {
     uint8_t head[2];
     xKeySwitchUnion btn;
-    float lx;
-    float rx;
-    float ry;
-    float L2;
-    float ly;
+    float lx; //获取左摇杆x数据，范围[-1.0~1.0]
+    float rx; //获取右摇杆x数据，范围[-1.0~1.0]
+    float ry; //获取右摇杆y数据，范围[-1.0~1.0]
+    float L2; //这是啥东西？？
+    float ly; //获取左摇杆y数据，范围[-1.0~1.0]
 
     uint8_t idle[16];
 } xRockerBtnDataStruct;

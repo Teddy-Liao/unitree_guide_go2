@@ -16,7 +16,7 @@
         #include "unitree_legged_sdk/unitree_legged_sdk.h"
     #endif  // ROBOT_TYPE_Go1
     #ifdef ROBOT_TYPE_Go2
-        #include "unitree_legged_sdk/unitree_legged_sdk.h"//这里记得要包含unitree_legged_sdk
+        //#include "unitree_legged_sdk/unitree_legged_sdk.h"//这里记得要包含unitree_legged_sdk
         #include <iostream>
         #include <stdio.h>
         #include <stdint.h>
@@ -57,7 +57,12 @@ public:
     void setPassive(){userCmd = UserCommand::L2_B;}
     void setZero(){userValue.setZero();}
 #ifdef COMPILE_WITH_REAL_ROBOT
-    virtual void receiveHandle(UNITREE_LEGGED_SDK::LowState *lowState){};
+    #ifndef ROBOT_TYPE_Go2
+        virtual void receiveHandle(UNITREE_LEGGED_SDK::LowState *lowState){};
+    #else
+        virtual void JoystickHandler(const void *message){};
+    #endif
+    
 #endif  // COMPILE_WITH_REAL_ROBOT
 protected:
     virtual void* run(void *arg){return NULL;}

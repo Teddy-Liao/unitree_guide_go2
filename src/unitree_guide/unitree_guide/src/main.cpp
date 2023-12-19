@@ -60,6 +60,9 @@ int main(int argc, char **argv)
 #endif // COMPILE_WITH_SIMULATION
 
 #ifdef COMPILE_WITH_REAL_ROBOT
+    #ifdef ROBOT_TYPE_Go2
+        unitree::robot::ChannelFactory::Instance()->Init(0, argv[1]);
+    #endif
     ioInter = new IOSDK(); // IOSDK.cpp 中定义了sendRecv，lowCmd，lowState等
     ctrlPlat = CtrlPlatform::REALROBOT;
 #endif // COMPILE_WITH_REAL_ROBOT

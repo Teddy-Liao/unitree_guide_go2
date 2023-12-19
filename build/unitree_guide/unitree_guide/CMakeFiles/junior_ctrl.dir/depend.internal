@@ -34,13 +34,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/FSM.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -512,13 +505,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/FSMState.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -991,13 +977,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_BalanceTest
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -1470,13 +1449,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FixedStand.
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -1949,13 +1921,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.c
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -2428,13 +2393,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Passive.cpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -2907,13 +2865,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_StepTest.cp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -3388,13 +3339,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_SwingTest.c
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -3869,13 +3813,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting.cp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -4351,13 +4288,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_move_base.c
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -4829,13 +4759,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/FeetEndCal.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -5308,13 +5231,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/GaitGenerator.cp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -5789,13 +5705,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeRobot.c
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/interface/CmdPanel.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelState.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/unitree_joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -6159,13 +6068,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/BalanceCtrl.c
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -6548,13 +6450,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/ControlFrame.
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -7019,13 +6914,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelState.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/unitree_joystick.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -7494,13 +7382,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelCmd.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelState.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/unitree_joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -7922,13 +7803,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelCmd.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelState.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/unitree_joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -7950,6 +7824,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/filesystem/file.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/filesystem/filesystem.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/json/json.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/json/jsonize.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/lock/lock.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/log/log.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/log/log_buffer.hpp
@@ -7974,9 +7849,29 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/LowState_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/MotorCmd_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/MotorState_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/WirelessController_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_factory.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_labor.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_namer.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_publisher.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_subscriber.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/client.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/client_base.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/client_stub.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/lease_client.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/future/request_future.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_api.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_error.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestHeader_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestIdentity_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestLease_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestPolicy_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/Request_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/ResponseHeader_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/ResponseStatus_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/Response_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_request_response.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/src/interface/IOSDK.cpp
  /opt/ros/noetic/include/ros/advertise_options.h
  /opt/ros/noetic/include/ros/advertise_service_options.h
@@ -8344,13 +8239,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/interface/CmdPanel.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/interface/KeyBoard.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/unitree_joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -8706,13 +8594,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHan
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/interface/CmdPanel.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/interface/WirelessHandle.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/unitree_joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -8734,6 +8615,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHan
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/filesystem/file.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/filesystem/filesystem.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/json/json.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/json/jsonize.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/lock/lock.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/log/log.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/log/log_buffer.hpp
@@ -8758,9 +8640,29 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHan
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/LowState_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/MotorCmd_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/MotorState_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/WirelessController_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_factory.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_labor.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_namer.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_publisher.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_subscriber.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/client.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/client_base.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/client_stub.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/lease_client.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/future/request_future.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_api.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_error.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestHeader_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestIdentity_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestLease_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestPolicy_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/Request_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/ResponseHeader_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/ResponseStatus_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/Response_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_request_response.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/src/interface/WirelessHandle.cpp
  /usr/local/include/ddscxx/dds/core/Duration.hpp
  /usr/local/include/ddscxx/dds/core/Entity.hpp
@@ -9106,13 +9008,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/matplotlibcpp.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/Array.hh
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/thirdParty/quadProgpp/QuadProg++.hh
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/comm.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/joystick.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/loop.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/quadruped.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/safety.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/udp.h
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_legged_sdk-3.8.0/include/unitree_legged_sdk/unitree_legged_sdk.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/any.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/block_queue.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/dds/dds_callback.hpp
@@ -9158,6 +9053,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/LowState_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/MotorCmd_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/MotorState_.hpp
+ /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/WirelessController_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_factory.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_publisher.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_subscriber.hpp
