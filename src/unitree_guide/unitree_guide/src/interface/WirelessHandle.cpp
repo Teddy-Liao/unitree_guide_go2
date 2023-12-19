@@ -15,6 +15,8 @@
 
 
 WirelessHandle::WirelessHandle(){
+
+// 初始化dds joystick receive结点
 #ifdef ROBOT_TYPE_Go2
     unitree::robot::ChannelSubscriberPtr<unitree_go::msg::dds_::WirelessController_> joystick_suber;
     joystick_suber.reset(new unitree::robot::ChannelSubscriber<unitree_go::msg::dds_::WirelessController_>(TOPIC_JOYSTICK));
@@ -69,6 +71,9 @@ void WirelessHandle::receiveHandle(UNITREE_LEGGED_SDK::LowState *lowState){
         userCmd = UserCommand::START;
     }
 
+    /*killZeroOffset 函数的作用是可能根据给定的容忍度来“杀死”接近零的值，
+    使它们在一定容忍度范围内等于零。这种操作通常用于处理输入设备或传感器的数据，
+    以防止由于噪声或小幅度变化而引起的不必要的数据波动。*/
     userValue.L2 = killZeroOffset(_keyData.L2, 0.08);
     userValue.lx = killZeroOffset(_keyData.lx, 0.08);
     userValue.ly = killZeroOffset(_keyData.ly, 0.08);
@@ -81,47 +86,53 @@ void WirelessHandle::receiveHandle(UNITREE_LEGGED_SDK::LowState *lowState){
 void WirelessHandle::JoystickHandler(const void *message)
 {
     unitree_go::msg::dds_::WirelessController_ joystick = *(unitree_go::msg::dds_::WirelessController_ *)message;
-    xKeySwitchUnion key;
-    key.value = joystick.keys();
+    xRockerBtnDataStruct key;
+    key.btn.value = joystick.keys();
 
-    if(((int)key.components.L2 == 1) && 
-       ((int)key.components.B  == 1)){
+    if(((int)key.btn.components.L2 == 1) && 
+       ((int)key.btn.components.B  == 1)){
         userCmd = UserCommand::L2_B;
     }
-    else if(((int)key.components.L2 == 1) && 
-            ((int)key.components.A  == 1)){
+    else if(((int)key.btn.components.L2 == 1) && 
+            ((int)key.btn.components.A  == 1)){
         userCmd = UserCommand::L2_A;
     }
-    else if(((int)key.components.L2 == 1) && 
-            ((int)key.components.X  == 1)){
+    else if(((int)key.btn.components.L2 == 1) && 
+            ((int)key.btn.components.X  == 1)){
         userCmd = UserCommand::L2_X;
     }
 
 #ifdef COMPILE_WITH_MOVE_BASE
-    else if(((int)key.components.L2 == 1) && 
-            ((int)key.components.Y  == 1)){
+    else if(((int)key.btn.components.L2 == 1) && 
+            ((int)key.btn.components.Y  == 1)){
         userCmd = UserCommand::L2_Y;
     }
 #endif  // COMPILE_WITH_MOVE_BASE
 
-    else if(((int)key.components.L1 == 1) && 
-            ((int)key.components.X  == 1)){
+    else if(((int)key.btn.components.L1 == 1) && 
+            ((int)key.btn.components.X  == 1)){
         userCmd = UserCommand::L1_X;
     }
-    else if(((int)key.components.L1 == 1) && 
-            ((int)key.components.A  == 1)){
+    else if(((int)key.btn.components.L1 == 1) && 
+            ((int)key.btn.components.A  == 1)){
         userCmd = UserCommand::L1_A;
     }
-    else if(((int)key.components.L1 == 1) && 
-            ((int)key.components.Y  == 1)){
+    else if(((int)key.btn.components.L1 == 1) && 
+            ((int)key.btn.components.Y  == 1)){
         userCmd = UserCommand::L1_Y;
     }
-    else if((int)key.components.start == 1){
+    else if((int)key.btn.components.start == 1){
         userCmd = UserCommand::START;
     }
-
-
-
+    
+    /*killZeroOffset 函数的作用是可能根据给定的容忍度来“杀死”接近零的值，
+    使它们在一定容忍度范围内等于零。这种操作通常用于处理输入设备或传感器的数据，
+    以防止由于噪声或小幅度变化而引起的不必要的数据波动。*/
+    userValue.L2 = killZeroOffset(key.L2, 0.08);
+    userValue.lx = killZeroOffset(key.lx, 0.08);
+    userValue.ly = killZeroOffset(key.ly, 0.08);
+    userValue.rx = killZeroOffset(key.rx, 0.08);
+    userValue.ry = killZeroOffset(key.ry, 0.08);
 
 }
 

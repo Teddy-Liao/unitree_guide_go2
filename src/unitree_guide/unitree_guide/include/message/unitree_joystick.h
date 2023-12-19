@@ -34,7 +34,7 @@ typedef union {
 // 40 Byte (now used 24B)
 typedef struct {
     uint8_t head[2];
-    xKeySwitchUnion btn;
+    xKeySwitchUnion btn; //所以btn里会包含switch结构体的内容
     float lx; //获取左摇杆x数据，范围[-1.0~1.0]
     float rx; //获取右摇杆x数据，范围[-1.0~1.0]
     float ry; //获取右摇杆y数据，范围[-1.0~1.0]
