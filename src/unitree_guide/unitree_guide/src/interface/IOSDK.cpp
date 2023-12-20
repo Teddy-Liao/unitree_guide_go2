@@ -5,6 +5,7 @@
 
 #include "interface/IOSDK.h"
 #include "interface/WirelessHandle.h"
+#include "interface/KeyBoard.h" // 为了从键盘映射手柄Button值
 #include <stdio.h>
 
 #ifdef ROBOT_TYPE_Go2
@@ -12,6 +13,7 @@
 #define TOPIC_LOWSTATE "rt/lowstate"
 #define TOPIC_HIGHSTATE "rt/sportmodestate"
 #define TOPIC_HEIGHTMAP "rt/utlidar/height_map_array"
+#define TOPIC_JOYSTICK "rt/wirelesscontroller"
 #endif
 
 #ifdef ROBOT_TYPE_Go1
@@ -55,7 +57,10 @@ IOSDK::IOSDK()
     lowCmdWriteThreadPtr = CreateRecurrentThreadEx("writebasiccmd", UT_CPU_ID_NONE, 1428, &IOSDK::LowCmdwriteHandler, this); // 700hz
     lowstate_subscriber.reset(new ChannelSubscriber<unitree_go::msg::dds_::LowState_>(TOPIC_LOWSTATE));
     lowstate_subscriber->InitChannel(std::bind(&IOSDK::LowStateMessageHandler, this, std::placeholders::_1), 1);
-    cmdPanel = new WirelessHandle();
+    // 用手柄控制
+    // cmdPanel = new WirelessHandle();
+    // 用键盘控制
+    cmdPanel = new KeyBoard();
     pthread_mutex_init(&lowlevelmutex, NULL); // 初始化一个互斥锁（Mutex）
 }
 #endif
@@ -166,9 +171,15 @@ void IOSDK::sendRecv(const LowlevelCmd *cmd, LowlevelState *state){
     }
 
     state->imu.quaternion[3] = _lowState.imu_state().quaternion()[3];
-    cmdPanel->JoystickHandler(&joystick);
+
+
+    // cmdPanel->receiveHandle(&_lowState);
+    // cmdPanel->JoystickHandler(&joystick);
     state->userCmd = cmdPanel->getUserCmd();
     state->userValue = cmdPanel->getUserValue();
+
+
+
     pthread_mutex_unlock(&lowlevelmutex);
 }
 

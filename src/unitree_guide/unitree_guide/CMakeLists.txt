@@ -27,6 +27,7 @@ else()
     message(FATAL_ERROR "[CMake ERROR] The ROBOT_TYPE is error")
 endif()
 
+#  SIMULATION和REAL_ROBOT必须一个为ON 另一个为OFF
 if(((SIMULATION) AND (REAL_ROBOT)) OR ((NOT SIMULATION) AND (NOT REAL_ROBOT)))
     message(FATAL_ERROR "[CMake ERROR] The SIMULATION and REAL_ROBOT can only be one ON one OFF")
 endif()
@@ -114,7 +115,6 @@ if(REAL_ROBOT)
             /usr/local/include/iceoryx/v2.0.2
             /usr/local/include/unitree
             ./library/unitree_sdk2/include
-            # library/unitree_legged_sdk-3.8.0/include
         )
         link_directories(/usr/local/lib)
     endif()

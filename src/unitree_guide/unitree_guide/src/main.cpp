@@ -65,6 +65,7 @@ int main(int argc, char **argv)
     #endif
     ioInter = new IOSDK(); // IOSDK.cpp 中定义了sendRecv，lowCmd，lowState等
     ctrlPlat = CtrlPlatform::REALROBOT;
+    std::cout << "succeed to initiate IOSDK" << std::endl;
 #endif // COMPILE_WITH_REAL_ROBOT
 
     CtrlComponents *ctrlComp = new CtrlComponents(ioInter);

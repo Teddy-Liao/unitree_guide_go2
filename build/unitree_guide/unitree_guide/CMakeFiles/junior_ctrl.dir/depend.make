@@ -7798,6 +7798,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/interface/CmdPanel.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/interface/IOInterface.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/interface/IOSDK.h
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/interface/KeyBoard.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/interface/WirelessHandle.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelCmd.h
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/message/LowlevelState.h

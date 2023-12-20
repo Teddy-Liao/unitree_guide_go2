@@ -22,9 +22,15 @@ public:
         void receiveHandle(UNITREE_LEGGED_SDK::LowState *lowState);
     #else
         void JoystickHandler(const void *message);
+        void receiveHandle(unitree_go::msg::dds_::LowState_ *lowState);
     #endif
 private:
-    xRockerBtnDataStruct _keyData;
+    #ifndef ROBOT_TYPE_Go2
+        xRockerBtnDataStruct _keyData;
+    #else
+        xRockerBtnDataStruct key;
+    #endif
+    
 };
 
 #endif  // WIRELESSHANDLE_H

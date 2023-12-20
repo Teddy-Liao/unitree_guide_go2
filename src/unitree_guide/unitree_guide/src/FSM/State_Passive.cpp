@@ -23,7 +23,7 @@ void State_Passive::enter(){
             _lowCmd->motorCmd[i].q = 0;
             _lowCmd->motorCmd[i].dq = 0;
             _lowCmd->motorCmd[i].Kp = 0;
-            _lowCmd->motorCmd[i].Kd = 3;
+            _lowCmd->motorCmd[i].Kd = 4;
             _lowCmd->motorCmd[i].tau = 0;
         }
     }
