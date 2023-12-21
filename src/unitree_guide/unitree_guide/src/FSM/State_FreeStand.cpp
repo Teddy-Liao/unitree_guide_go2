@@ -5,6 +5,7 @@
 
 State_FreeStand::State_FreeStand(CtrlComponents *ctrlComp)
              :FSMState(ctrlComp, FSMStateName::FREESTAND, "free stand"){
+    // 在这里设置roll, pitch, yaw, height的范围
     _rowMax = 20 * M_PI / 180;
     _rowMin = -_rowMax;
     _pitchMax = 15 * M_PI / 180;
@@ -21,16 +22,17 @@ void State_FreeStand::enter(){
             _lowCmd->setSimStanceGain(i);
         }
         else if(_ctrlComp->ctrlPlatform == CtrlPlatform::REALROBOT){
-            _lowCmd->setRealStanceGain(i);
+            _lowCmd->setRealStanceGain(i); // 这里的KP，KD和FIXEDSTAND采用的是同一套参数
         }
         _lowCmd->setZeroDq(i);
-        _lowCmd->setZeroTau(i);
+        _lowCmd->setZeroTau(i); // 无前馈力矩哦
     }
 
     for(int i=0; i<12; i++){
         _lowCmd->motorCmd[i].q = _lowState->motorState[i].q;
     }
-    _initVecOX = _ctrlComp->robotModel->getX(*_lowState);
+    
+    _initVecOX = _ctrlComp->robotModel->getX(*_lowState);// BODY Frame下，各足端的位置向量
     _initVecXP = _ctrlComp->robotModel->getVecXP(*_lowState);
 
     _ctrlComp->setAllStance();
@@ -88,5 +90,5 @@ Vec34 State_FreeStand::_calcOP(float row, float pitch, float yaw, float height){
 
 void State_FreeStand::_calcCmd(Vec34 vecOP){
     Vec12 q = _ctrlComp->robotModel->getQ(vecOP, FrameType::BODY);
-    _lowCmd->setQ(q);
+    _lowCmd->setQ(q);//单腿逆运动学求解
 }

@@ -27,7 +27,7 @@ FSM::~FSM(){
 
 void FSM::initialize(){
     _currentState = _stateList.passive;
-    _currentState -> enter();
+    _currentState -> enter(); // 实际是运行State_Passive.cpp中的enter()
     _nextState = _currentState;
     _mode = FSMMode::NORMAL;
 }

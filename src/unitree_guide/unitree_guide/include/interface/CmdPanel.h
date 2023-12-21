@@ -60,8 +60,8 @@ public:
     #ifndef ROBOT_TYPE_Go2
         virtual void receiveHandle(UNITREE_LEGGED_SDK::LowState *lowState){};
     #else
-        virtual void JoystickHandler(const void *message){};
-        // virtual void receiveHandle(unitree_go::msg::dds_::LowState_ *lowState){};
+        // virtual void JoystickHandler(const void *message){};
+        virtual void receiveHandle(unitree_go::msg::dds_::LowState_ *lowState){};
     #endif
     
 #endif  // COMPILE_WITH_REAL_ROBOT

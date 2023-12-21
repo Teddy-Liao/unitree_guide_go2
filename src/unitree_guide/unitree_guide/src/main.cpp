@@ -90,7 +90,7 @@ int main(int argc, char **argv)
     // ctrlComp->waveGen = new WaveGenerator(0.4, 0.35, Vec4(0, 0.5, 0.5, 0));  //Running Trot, only for sim
     // ctrlComp->waveGen = new WaveGenerator(0.4, 0.7, Vec4(0, 0, 0, 0));  //Pronk, only for sim
 
-    ctrlComp->geneObj();
+    ctrlComp->geneObj();// 运行Estimator和BalanceCtrl
 
     ControlFrame ctrlFrame(ctrlComp);
 
@@ -98,7 +98,7 @@ int main(int argc, char **argv)
 
     while (running)
     {
-        ctrlFrame.run();
+        ctrlFrame.run(); // 运行FSM中的run()
     }
 
     delete ctrlComp;

@@ -17,8 +17,6 @@
     #include "unitree/common/thread/thread.hpp"
     #include "unitree/robot/channel/channel_factory.hpp"
 
-    #include <unitree/idl/go2/WirelessController_.hpp> //ldt
-
     using namespace unitree::common;
     using namespace unitree::robot;
     constexpr double PosStopF = (2.146E+9f);
@@ -48,10 +46,6 @@ private:
     pthread_mutex_t lowlevelmutex;
     unitree_go::msg::dds_::LowCmd_ _lowCmd{};
     unitree_go::msg::dds_::LowState_ _lowState{};
-
-    unitree_go::msg::dds_::WirelessController_ joystick;//ldt
-
-
     unitree::common::ThreadPtr lowCmdWriteThreadPtr;
     unitree::common::ThreadPtr highStateWriteThreadPtr;
     ChannelPublisherPtr<unitree_go::msg::dds_::LowCmd_> lowcmd_publisher;

@@ -13,6 +13,8 @@ void State_FixedStand::enter(){
             _lowCmd->setSimStanceGain(i);
         }
         else if(_ctrlComp->ctrlPlatform == CtrlPlatform::REALROBOT){
+            // FIXEDSTAND模式下，电机为位置模式。
+            // 调试参数调的是KP KD
             _lowCmd->setRealStanceGain(i);
         }
         _lowCmd->setZeroDq(i);
@@ -21,15 +23,19 @@ void State_FixedStand::enter(){
     for(int i=0; i<12; i++){
         _lowCmd->motorCmd[i].q = _lowState->motorState[i].q;
         _startPos[i] = _lowState->motorState[i].q;
+        // 将各关节的Current Position设置为StartPosition
     }
     _ctrlComp->setAllStance();
 }
 
 void State_FixedStand::run(){
-    _percent += (float)1/_duration;
+    _percent += (float)1/_duration; //默认duration=1000 steps，减小duration应该可以提高站起来的速度
     _percent = _percent > 1 ? 1 : _percent;
     for(int j=0; j<12; j++){
+        // command_position = start_position * (1 - percent) + desired_position * (percent)
+        // 实际上是简单的插值
         _lowCmd->motorCmd[j].q = (1 - _percent)*_startPos[j] + _percent*_targetPos[j]; 
+        // _targetPos[]里可以更改默认的关节角度
     }
 }
 

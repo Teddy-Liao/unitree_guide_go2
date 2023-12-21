@@ -58,9 +58,9 @@ IOSDK::IOSDK()
     lowstate_subscriber.reset(new ChannelSubscriber<unitree_go::msg::dds_::LowState_>(TOPIC_LOWSTATE));
     lowstate_subscriber->InitChannel(std::bind(&IOSDK::LowStateMessageHandler, this, std::placeholders::_1), 1);
     // 用手柄控制
-    // cmdPanel = new WirelessHandle();
+    cmdPanel = new WirelessHandle();
     // 用键盘控制
-    cmdPanel = new KeyBoard();
+    // cmdPanel = new KeyBoard();
     pthread_mutex_init(&lowlevelmutex, NULL); // 初始化一个互斥锁（Mutex）
 }
 #endif
@@ -173,7 +173,7 @@ void IOSDK::sendRecv(const LowlevelCmd *cmd, LowlevelState *state){
     state->imu.quaternion[3] = _lowState.imu_state().quaternion()[3];
 
 
-    // cmdPanel->receiveHandle(&_lowState);
+    cmdPanel->receiveHandle(&_lowState);
     // cmdPanel->JoystickHandler(&joystick);
     state->userCmd = cmdPanel->getUserCmd();
     state->userValue = cmdPanel->getUserValue();

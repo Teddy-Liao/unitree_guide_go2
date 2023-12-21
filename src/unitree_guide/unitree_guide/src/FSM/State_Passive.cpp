@@ -9,7 +9,7 @@ State_Passive::State_Passive(CtrlComponents *ctrlComp)
 void State_Passive::enter(){
     if(_ctrlComp->ctrlPlatform == CtrlPlatform::GAZEBO){
         for(int i=0; i<12; i++){
-            _lowCmd->motorCmd[i].mode = 10;
+            _lowCmd->motorCmd[i].mode = 10; 
             _lowCmd->motorCmd[i].q = 0;
             _lowCmd->motorCmd[i].dq = 0;
             _lowCmd->motorCmd[i].Kp = 0;
@@ -19,11 +19,12 @@ void State_Passive::enter(){
     }
     else if(_ctrlComp->ctrlPlatform == CtrlPlatform::REALROBOT){
         for(int i=0; i<12; i++){
+            // 在Go2开发文档里写的是mode要设置为0x01，为什么这里设置的mode=10，仍然可以控制电机呢？
             _lowCmd->motorCmd[i].mode = 10;
             _lowCmd->motorCmd[i].q = 0;
             _lowCmd->motorCmd[i].dq = 0;
             _lowCmd->motorCmd[i].Kp = 0;
-            _lowCmd->motorCmd[i].Kd = 4;
+            _lowCmd->motorCmd[i].Kd = 4; //Kd如果太小，一切换到阻尼状态，机器人会落下的十分快，比较伤机器。
             _lowCmd->motorCmd[i].tau = 0;
         }
     }

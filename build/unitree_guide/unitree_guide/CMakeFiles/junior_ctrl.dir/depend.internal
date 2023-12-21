@@ -7825,7 +7825,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/filesystem/file.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/filesystem/filesystem.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/json/json.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/json/jsonize.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/lock/lock.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/log/log.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/log/log_buffer.hpp
@@ -7850,29 +7849,9 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/LowState_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/MotorCmd_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/MotorState_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/WirelessController_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_factory.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_labor.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_namer.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_publisher.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_subscriber.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/client.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/client_base.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/client_stub.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/lease_client.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/future/request_future.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_api.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_error.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestHeader_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestIdentity_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestLease_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestPolicy_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/Request_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/ResponseHeader_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/ResponseStatus_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/Response_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_request_response.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/src/interface/IOSDK.cpp
  /opt/ros/noetic/include/ros/advertise_options.h
  /opt/ros/noetic/include/ros/advertise_service_options.h
@@ -8233,6 +8212,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o
  /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/find.hpp
  /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/hash.hpp
  /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/qos/TopicQosDelegate.hpp
+ /usr/local/include/unitree/common/thread/thread.hpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/common/enumClass.h
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/include/common/mathTools.h
@@ -8616,7 +8596,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHan
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/filesystem/file.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/filesystem/filesystem.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/json/json.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/json/jsonize.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/lock/lock.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/log/log.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/common/log/log_buffer.hpp
@@ -8641,29 +8620,9 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHan
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/LowState_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/MotorCmd_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/MotorState_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/WirelessController_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_factory.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_labor.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_namer.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_publisher.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_subscriber.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/client.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/client_base.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/client_stub.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/client/lease_client.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/future/request_future.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_api.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_error.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestHeader_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestIdentity_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestLease_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/RequestPolicy_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/Request_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/ResponseHeader_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/ResponseStatus_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_idl_decl/Response_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/internal/internal_request_response.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/src/interface/WirelessHandle.cpp
  /usr/local/include/ddscxx/dds/core/Duration.hpp
  /usr/local/include/ddscxx/dds/core/Entity.hpp
@@ -8964,6 +8923,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHan
  /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/find.hpp
  /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/hash.hpp
  /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/qos/TopicQosDelegate.hpp
+ /usr/local/include/unitree/common/thread/thread.hpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/devel/include/unitree_legged_msgs/BmsCmd.h
  /home/parallels/Projects/unitree_guide_ldt/devel/include/unitree_legged_msgs/BmsState.h
@@ -9054,7 +9014,6 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/main.cpp.o
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/LowState_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/MotorCmd_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/MotorState_.hpp
- /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/idl/go2/WirelessController_.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_factory.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_publisher.hpp
  /home/parallels/Projects/unitree_guide_ldt/src/unitree_guide/unitree_guide/library/unitree_sdk2/include/unitree/robot/channel/channel_subscriber.hpp
