@@ -24,7 +24,7 @@ void State_Passive::enter(){
             _lowCmd->motorCmd[i].q = 0;
             _lowCmd->motorCmd[i].dq = 0;
             _lowCmd->motorCmd[i].Kp = 0;
-            _lowCmd->motorCmd[i].Kd = 4; //Kd如果太小，一切换到阻尼状态，机器人会落下的十分快，比较伤机器。
+            _lowCmd->motorCmd[i].Kd = 6; //Kd如果太小，一切换到阻尼状态，机器人会落下的十分快，比较伤机器。
             _lowCmd->motorCmd[i].tau = 0;
         }
     }

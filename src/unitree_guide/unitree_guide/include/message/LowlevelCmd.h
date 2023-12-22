@@ -85,16 +85,16 @@ struct LowlevelCmd{
     void setRealStanceGain(int legID){
         // ab-ad
         motorCmd[legID*3+0].mode = 10;
-        motorCmd[legID*3+0].Kp = 190;
-        motorCmd[legID*3+0].Kd = 2;
+        motorCmd[legID*3+0].Kp = 60;
+        motorCmd[legID*3+0].Kd = 4;
         // hip
         motorCmd[legID*3+1].mode = 10;
-        motorCmd[legID*3+1].Kp = 190;
-        motorCmd[legID*3+1].Kd = 2;
+        motorCmd[legID*3+1].Kp = 100;
+        motorCmd[legID*3+1].Kd = 5;
         // knee
         motorCmd[legID*3+2].mode = 10;
-        motorCmd[legID*3+2].Kp = 300;
-        motorCmd[legID*3+2].Kd = 4;
+        motorCmd[legID*3+2].Kp = 110;
+        motorCmd[legID*3+2].Kd = 7;
 
         // motorCmd[legID*3+0].mode = 10;
         // motorCmd[legID*3+0].Kp = 60;

@@ -27,16 +27,17 @@ State_Trotting::State_Trotting(CtrlComponents *ctrlComp)
     _Kdp = Vec3(20, 20, 20).asDiagonal();
     _kpw = 400;
     _Kdw = Vec3(50, 50, 50).asDiagonal();
-    _KpSwing = Vec3(400, 400, 400).asDiagonal();
-    _KdSwing = Vec3(10, 10, 10).asDiagonal();
+    _KpSwing = Vec3(400, 400, 400).asDiagonal(); // 摆动腿足端修正力的刚度系数，对应教材P94式(5.48)
+    _KdSwing = Vec3(10, 10, 10).asDiagonal(); // 摆动腿足端修正力的刚度系数，
 #endif
 
 
 #ifdef ROBOT_TYPE_Go2
-    _Kpp = Vec3(70, 70, 70).asDiagonal();
-    _Kdp = Vec3(10, 10, 10).asDiagonal();
-    _kpw = 780; 
-    _Kdw = Vec3(70, 70, 70).asDiagonal();
+    // 这是需要标定的参数
+    _Kpp = Vec3(150, 150, 200).asDiagonal(); // 150 150 200
+    _Kdp = Vec3(12, 12, 15).asDiagonal();// 12 12 15
+    _kpw = 900; 
+    _Kdw = Vec3(100, 100, 100).asDiagonal();
     _KpSwing = Vec3(400, 400, 400).asDiagonal();
     _KdSwing = Vec3(10, 10, 10).asDiagonal();
 #endif

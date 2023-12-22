@@ -11,12 +11,14 @@ State_StepTest::State_StepTest(CtrlComponents *ctrlComp)
 
     _gaitHeight = 0.05;
 
+    //这是需要标定的参数！
     _KpSwing = Vec3(600, 600, 200).asDiagonal();
     _KdSwing = Vec3(20, 20, 5).asDiagonal();
 
     _Kpp = Vec3(50, 50, 300).asDiagonal();
-    _Kpw = Vec3(600, 600, 600).asDiagonal();
     _Kdp = Vec3(5, 5, 20).asDiagonal();
+
+    _Kpw = Vec3(600, 600, 600).asDiagonal();
     _Kdw = Vec3(10, 10, 10).asDiagonal();
 }
 

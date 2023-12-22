@@ -17,7 +17,9 @@ State_BalanceTest::State_BalanceTest(CtrlComponents *ctrlComp)
     _yawMax = 20 * M_PI / 180;
     _yawMin = -_yawMax;
 
+    // 质心处位移KP
     _Kpp = Vec3(120, 120, 120).asDiagonal();//(120, 120, 120)
+    // 质心处位移KD
     _Kdp = Vec3(25, 25, 25).asDiagonal();//(25, 25, 25)
 
     _kpw = 40;//200
