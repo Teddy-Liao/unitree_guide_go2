@@ -31,6 +31,17 @@ State_Trotting::State_Trotting(CtrlComponents *ctrlComp)
     _KdSwing = Vec3(10, 10, 10).asDiagonal();
 #endif
 
+#ifdef ROBOT_TYPE_Go2
+    // 这是需要标定的参数
+    _Kpp = Vec3(70, 70, 70).asDiagonal(); // 150 150 200
+    _Kdp = Vec3(10, 10, 10).asDiagonal();// 12 12 15
+    _kpw = 780; 
+    _Kdw = Vec3(70, 70, 70).asDiagonal();
+    _KpSwing = Vec3(400, 400, 400).asDiagonal();
+    _KdSwing = Vec3(10, 10, 10).asDiagonal();
+#endif
+
+
     _vxLim = _robModel->getRobVelLimitX();
     _vyLim = _robModel->getRobVelLimitY();
     _wyawLim = _robModel->getRobVelLimitYaw();

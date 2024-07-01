@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
 project(unitree_guide)
 
-set(ROBOT_TYPE Go1)         # The type of robot, support Go1, A1, and Go2 currently
+set(ROBOT_TYPE Go2)         # The type of robot, support Go1, A1, and Go2 currently
 set(PLATFORM amd64)         # The platform to compile, support amd64 and arm64
 
 set(CATKIN_MAKE ON)        # Use CATKIN_MAKE or not, ON or OFF

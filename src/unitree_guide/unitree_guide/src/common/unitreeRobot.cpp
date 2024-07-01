@@ -163,3 +163,40 @@ Go1Robot::Go1Robot(){
     _Ib = Vec3(0.0792, 0.2085, 0.2265).asDiagonal();
 #endif  // COMPILE_WITH_SIMULATION
 }
+
+
+Go2Robot::Go2Robot(){
+    // 参数为Go2Leg(const int legID, const Vec3 pHip2B)
+    // pHip2B代表从机身中心到该 腿基座坐标系的原点的向量。
+    _Legs[0] = new Go2Leg(0, Vec3( 0.1934, -0.0465, 0));
+    _Legs[1] = new Go2Leg(1, Vec3( 0.1934,  0.0465, 0));
+    _Legs[2] = new Go2Leg(2, Vec3(-0.1934, -0.0465, 0));
+    _Legs[3] = new Go2Leg(3, Vec3(-0.1934,  0.0465, 0));
+
+    // 代表各个足端中性落脚点在机身坐标系 { b } 下的坐标
+    _feetPosNormalStand <<  0.1881,  0.1881, -0.1881, -0.1881,
+                           -0.1600,  0.1600, -0.1600,  0.1600,
+                           -0.3200, -0.3200, -0.3200, -0.3200;
+    // _feetPosNormalStand <<  0.1881,  0.1881, -0.1881, -0.1881,
+    //                        -0.1300,  0.1300, -0.1300,  0.1300,
+    //                        -0.3200, -0.3200, -0.3200, -0.3200;
+
+    _robVelLimitX << -0.4, 0.4; // 机器人在机身坐标系 { b } 下 x 轴方向的平移速度区间
+    _robVelLimitY << -0.3, 0.3; // 机器人在机身坐标系 { b } 下 y 轴方向的平移速度区间
+    _robVelLimitYaw << -0.5, 0.5; //机器人在机身坐标系 { b } 下绕 z 轴方向的转动角速度区间。
+
+
+#ifdef COMPILE_WITH_REAL_ROBOT
+    _mass = 6.921 + 0.678 * 4 + 1.152 * 4 + 0.154 * 4; // 14.857 kg
+    _pcb << 0.0, 0.0, 0.0; //_pcd：机身在世界坐标系 { s } 下的目标位置。
+    _Ib = Vec3(0.0792, 0.2085, 0.2265).asDiagonal();
+    /*机器人的惯性张量，由于我们将机器人整体简化为一个刚体，
+    所以这个惯性 张量应该取机器人大致处于站立状态时的惯性张量*/
+#endif  // COMPILE_WITH_REAL_ROBOT
+
+#ifdef COMPILE_WITH_SIMULATION
+    _mass = 6.921 + 0.678 * 4 + 1.152 * 4 + 0.154 * 4; // 14.857 kg
+    _pcb << 0.0, 0.0, 0.0; //_pcd：机身在世界坐标系 { s } 下的目标位置。
+    _Ib = Vec3(0.0792, 0.2085, 0.2265).asDiagonal();
+#endif  // COMPILE_WITH_SIMULATION
+}

@@ -45,4 +45,12 @@ public:
     ~Go1Leg(){}
 };
 
+class Go2Leg : public QuadrupedLeg{
+public:
+    Go2Leg(const int legID, const Vec3 pHip2B):
+        QuadrupedLeg(legID, 0.088508, 0.213, 0.213, pHip2B){}
+        // int legID, float abadLinkLength, float hipLinkLength, float kneeLinkLength, Vec3 pHip2B
+    ~Go2Leg(){}
+};
+
 #endif  // UNITREELEG_H
