@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
 project(unitree_guide)
 
-set(ROBOT_TYPE Go1)         # The type of robot, support Go1 and A1 currently
+set(ROBOT_TYPE Go1)         # The type of robot, support Go1, A1, and Go2 currently
 set(PLATFORM amd64)         # The platform to compile, support amd64 and arm64
 
 set(CATKIN_MAKE ON)        # Use CATKIN_MAKE or not, ON or OFF
@@ -21,10 +21,13 @@ if(${ROBOT_TYPE} STREQUAL "A1")
     add_definitions(-DROBOT_TYPE_A1)
 elseif(${ROBOT_TYPE} STREQUAL "Go1")
     add_definitions(-DROBOT_TYPE_Go1)
+elseif(${ROBOT_TYPE} STREQUAL "Go2")
+    add_definitions(-DROBOT_TYPE_Go2)
 else()
     message(FATAL_ERROR "[CMake ERROR] The ROBOT_TYPE is error")
 endif()
 
+# #  SIMULATION和REAL_ROBOT必须一个为ON 另一个为OFF
 if(((SIMULATION) AND (REAL_ROBOT)) OR ((NOT SIMULATION) AND (NOT REAL_ROBOT)))
     message(FATAL_ERROR "[CMake ERROR] The SIMULATION and REAL_ROBOT can only be one ON one OFF")
 endif()
@@ -106,6 +109,14 @@ if(REAL_ROBOT)
                 library/unitree_legged_sdk-3.8.0/lib/cpp/arm64
             )
         endif()
+    elseif(${ROBOT_TYPE} STREQUAL "Go2")
+        include_directories(
+            /usr/local/include/ddscxx
+            /usr/local/include/iceoryx/v2.0.2
+            /usr/local/include/unitree
+            ./library/unitree_sdk2/include
+        )
+        link_directories(/usr/local/lib)
     endif()
 endif()
 
@@ -136,7 +147,9 @@ if(REAL_ROBOT)
             target_link_libraries(junior_ctrl libunitree_legged_sdk_arm64.so)
         endif()
     elseif(${ROBOT_TYPE} STREQUAL "Go1")
-            target_link_libraries(junior_ctrl libunitree_legged_sdk.a)
+        target_link_libraries(junior_ctrl libunitree_legged_sdk.a)
+    elseif(${ROBOT_TYPE} STREQUAL "Go2")
+        target_link_libraries(junior_ctrl unitree_sdk2 ddsc ddscxx rt pthread)    
     endif()
 endif()
 target_link_libraries(junior_ctrl -pthread lcm)

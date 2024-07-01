@@ -1,6 +1,7 @@
 <launch>
     <arg name="wname" default="earth"/>
-    <arg name="rname" default="go1"/>
+    <!-- You can change the default robot launched in Gazebo here -->
+    <arg name="rname" default="go2"/>
     <arg name="robot_path" value="(find $(arg rname)_description)"/>
     <arg name="dollar" value="$"/>
 
