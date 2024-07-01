@@ -64,7 +64,6 @@ int main(int argc, char **argv)
     #ifdef ROBOT_TYPE_Go2
         unitree::robot::ChannelFactory::Instance()->Init(0, argv[1]);
     #endif
-
     ioInter = new IOSDK();
     ctrlPlat = CtrlPlatform::REALROBOT;
     std::cout << "succeed to initiate IOSDK" << std::endl;
@@ -85,11 +84,11 @@ int main(int argc, char **argv)
     ctrlComp->robotModel = new Go2Robot();
 #endif
 
-    ctrlComp->waveGen = new WaveGenerator(0.45, 0.5, Vec4(0, 0.5, 0.5, 0)); // Trot
+    // ctrlComp->waveGen = new WaveGenerator(0.45, 0.5, Vec4(0, 0.5, 0.5, 0)); // Trot
     // ctrlComp->waveGen = new WaveGenerator(1.1, 0.75, Vec4(0, 0.25, 0.5, 0.75));  //Crawl, only for sim
     // ctrlComp->waveGen = new WaveGenerator(0.4, 0.6, Vec4(0, 0.5, 0.5, 0));  //Walking Trot, only for sim
     // ctrlComp->waveGen = new WaveGenerator(0.4, 0.35, Vec4(0, 0.5, 0.5, 0));  //Running Trot, only for sim
-    // ctrlComp->waveGen = new WaveGenerator(0.4, 0.7, Vec4(0, 0, 0, 0));  //Pronk, only for sim
+    ctrlComp->waveGen = new WaveGenerator(0.4, 0.7, Vec4(0, 0, 0, 0));  //Pronk, only for sim
 
     ctrlComp->geneObj(); // 运行Estimator和BalanceCtrl
 

@@ -16,9 +16,11 @@
     #include "unitree/common/time/time_tool.hpp"
     #include "unitree/common/thread/thread.hpp"
     #include "unitree/robot/channel/channel_factory.hpp"
+    #include <unitree/robot/go2/robot_state/robot_state_client.hpp>
 
     using namespace unitree::common;
     using namespace unitree::robot;
+    using namespace unitree::robot::go2;
     constexpr double PosStopF = (2.146E+9f);
     constexpr double VelStopF = (16000.0f);
 #endif
@@ -48,12 +50,16 @@ private:
     unitree_go::msg::dds_::LowState_ _lowState{};
     unitree::common::ThreadPtr lowCmdWriteThreadPtr;
     unitree::common::ThreadPtr highStateWriteThreadPtr;
+
+    unitree::robot::go2::RobotStateClient rsc;
+
     ChannelPublisherPtr<unitree_go::msg::dds_::LowCmd_> lowcmd_publisher;
     ChannelSubscriberPtr<unitree_go::msg::dds_::LowState_> lowstate_subscriber;
     void InitLowCmd_dds();
     void LowCmdwriteHandler(); 
     void LowStateMessageHandler(const void *);
     uint32_t crc32_core(uint32_t* ptr, uint32_t len);
+    int queryServiceStatus(const std::string& serviceName);
 #endif
 
 #ifdef COMPILE_WITH_MOVE_BASE

@@ -45,6 +45,8 @@ IOSDK::IOSDK():_safe(UNITREE_LEGGED_SDK::LeggedType::Aliengo), _udp(UNITREE_LEGG
     _joint_state.effort.resize(12);
 #endif  // COMPILE_WITH_MOVE_BASE
 }
+#endif
+
 
 #ifdef ROBOT_TYPE_Go2
 IOSDK::IOSDK(){
@@ -73,8 +75,6 @@ IOSDK::IOSDK(){
 }
 #endif
 
-
-#endif
 
 
 // 如果不是go2，_lowCmd采用unitree_legged_sdk接口
@@ -132,6 +132,33 @@ void IOSDK::sendRecv(const LowlevelCmd *cmd, LowlevelState *state){
 
 
 #else  //ROBOT_TYPE_Go2
+int IOSDK::queryServiceStatus(const std::string& serviceName)
+{
+    std::vector<ServiceState> serviceStateList;
+    int ret,serviceStatus;
+    ret = rsc.ServiceList(serviceStateList);
+    size_t i, count=serviceStateList.size();
+    for (i=0; i<count; i++)
+    {
+        const ServiceState& serviceState = serviceStateList[i];
+        if(serviceState.name == serviceName)
+        {
+            if(serviceState.status == 0) 
+            {
+                std::cout << "name: " << serviceState.name <<" is activate"<<std::endl;
+                serviceStatus = 1;
+            }
+            else
+            {
+                std::cout << "name:" << serviceState.name <<" is deactivate"<<std::endl;
+                serviceStatus = 0;
+            } 
+        }    
+    }
+    return serviceStatus;
+    
+}
+
 void IOSDK::InitLowCmd_dds(){
 
     _lowCmd.head()[0] = 0xFE;
@@ -148,7 +175,17 @@ void IOSDK::InitLowCmd_dds(){
         _lowCmd.motor_cmd()[i].kd() = (0);
         _lowCmd.motor_cmd()[i].tau() = (0);
     }
-    return;
+
+    // deactivate the default sport_mode service
+    rsc.SetTimeout(5.0f);
+    rsc.Init();
+    while(queryServiceStatus("sport_mode"))
+    {
+        std::cout<<"Trying to deactivate the service: "<<"sport_mode"<<std::endl;
+        rsc.ServiceSwitch("sport_mode", 0);  
+        sleep(0.5);
+    }
+    
 }
 
 

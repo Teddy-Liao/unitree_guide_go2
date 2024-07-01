@@ -57,9 +57,11 @@ public:
     UserValue getUserValue(){return userValue;}
     void setPassive(){userCmd = UserCommand::L2_B;}
     void setZero(){userValue.setZero();}
-#ifdef COMPILE_WITH_REAL_ROBOT
+#ifndef ROBOT_TYPE_Go2
     virtual void receiveHandle(UNITREE_LEGGED_SDK::LowState *lowState){};
-#endif  // COMPILE_WITH_REAL_ROBOT
+#else
+    virtual void receiveHandle(unitree_go::msg::dds_::LowState_ *lowState){};
+#endif // ROBOT_TYPE_Go2
 protected:
     virtual void* run(void *arg){return NULL;}
     UserCommand userCmd;
