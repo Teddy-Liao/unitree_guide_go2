@@ -12,9 +12,23 @@
     #ifdef ROBOT_TYPE_A1
         #include "unitree_legged_sdk/unitree_legged_sdk.h"
     #endif  // ROBOT_TYPE_A1
+
     #ifdef ROBOT_TYPE_Go1
         #include "unitree_legged_sdk/unitree_legged_sdk.h"
     #endif  // ROBOT_TYPE_Go1
+
+    #ifdef ROBOT_TYPE_Go2
+        #include <iostream>
+        #include <stdio.h>
+        #include <stdint.h>
+        #include <math.h>
+        #include <unitree/robot/channel/channel_publisher.hpp>
+        #include <unitree/robot/channel/channel_subscriber.hpp>
+        #include <unitree/idl/go2/LowState_.hpp>
+        #include <unitree/idl/go2/LowCmd_.hpp>
+        #include <unitree/common/time/time_tool.hpp>
+        #include <unitree/common/thread/thread.hpp>
+    #endif  // ROBOT_TYPE_Go2
 #endif  // COMPILE_WITH_REAL_ROBOT
 
 struct UserValue{
@@ -43,9 +57,11 @@ public:
     UserValue getUserValue(){return userValue;}
     void setPassive(){userCmd = UserCommand::L2_B;}
     void setZero(){userValue.setZero();}
-#ifdef COMPILE_WITH_REAL_ROBOT
+#ifndef ROBOT_TYPE_Go2
     virtual void receiveHandle(UNITREE_LEGGED_SDK::LowState *lowState){};
-#endif  // COMPILE_WITH_REAL_ROBOT
+#else
+    virtual void receiveHandle(unitree_go::msg::dds_::LowState_ *lowState){};
+#endif // ROBOT_TYPE_Go2
 protected:
     virtual void* run(void *arg){return NULL;}
     UserCommand userCmd;

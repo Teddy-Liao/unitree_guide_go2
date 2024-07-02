@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.14)
 project(unitree_guide)
 
-set(ROBOT_TYPE Go1)         # The type of robot, support Go1, A1, and Go2 currently
+set(ROBOT_TYPE Go2)         # The type of robot, support Go1, A1, and Go2 currently
 set(PLATFORM amd64)         # The platform to compile, support amd64 and arm64
 
 set(CATKIN_MAKE ON)        # Use CATKIN_MAKE or not, ON or OFF
-set(SIMULATION ON)         # Use Gazebo or not, ON or OFF
-set(REAL_ROBOT OFF)          # Link real robot or not, ON or OFF
+set(SIMULATION OFF)         # Use Gazebo or not, ON or OFF
+set(REAL_ROBOT ON)          # Link real robot or not, ON or OFF
 set(DEBUG OFF)              # Use debug functions or not, ON or OFF
 set(MOVE_BASE OFF)               # Need move_base or not, ON or OFF 
 
@@ -27,7 +27,7 @@ else()
     message(FATAL_ERROR "[CMake ERROR] The ROBOT_TYPE is error")
 endif()
 
-# #  SIMULATION和REAL_ROBOT必须一个为ON 另一个为OFF
+# SIMULATION和REAL_ROBOT必须一个为ON 另一个为OFF
 if(((SIMULATION) AND (REAL_ROBOT)) OR ((NOT SIMULATION) AND (NOT REAL_ROBOT)))
     message(FATAL_ERROR "[CMake ERROR] The SIMULATION and REAL_ROBOT can only be one ON one OFF")
 endif()
