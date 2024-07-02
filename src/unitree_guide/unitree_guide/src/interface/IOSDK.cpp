@@ -47,15 +47,29 @@ IOSDK::IOSDK():_safe(UNITREE_LEGGED_SDK::LeggedType::Aliengo), _udp(UNITREE_LEGG
 }
 #endif
 
-
 #ifdef ROBOT_TYPE_Go2
 IOSDK::IOSDK(){
+    // the default constructor is called when IOSDK is created
+
+    // init communication and automatically deactivate 'sport_mode'
     InitLowCmd_dds();
+
+    /*create publisher*/
     lowcmd_publisher.reset(new ChannelPublisher<unitree_go::msg::dds_::LowCmd_>(TOPIC_LOWCMD));
     lowcmd_publisher->InitChannel();
-    lowCmdWriteThreadPtr = CreateRecurrentThreadEx("writebasiccmd", UT_CPU_ID_NONE, 1428, &IOSDK::LowCmdwriteHandler, this); // 700hz
+    
+    /*create subscriber*/
     lowstate_subscriber.reset(new ChannelSubscriber<unitree_go::msg::dds_::LowState_>(TOPIC_LOWSTATE));
     lowstate_subscriber->InitChannel(std::bind(&IOSDK::LowStateMessageHandler, this, std::placeholders::_1), 1);
+
+    /*loop publishing thread*/
+    // 新增线程可以实现loop function的功能
+    // intervalMicrosec : 1微秒 = 0.000001秒
+    // 当dt=0.002s
+    // ntervalMicrosec = 2000us
+    lowCmdWriteThreadPtr = CreateRecurrentThreadEx("dds_write_thread", UT_CPU_ID_NONE, 2000, &IOSDK::LowCmdwriteHandler, this); // 500hz
+
+
     // 用手柄控制
     cmdPanel = new WirelessHandle();
     // 用键盘控制
@@ -175,23 +189,31 @@ void IOSDK::InitLowCmd_dds(){
         _lowCmd.motor_cmd()[i].kd() = (0);
         _lowCmd.motor_cmd()[i].tau() = (0);
     }
+    // the upper part of InitLowCmd_dds() is copied from Unitree_sdk2 to init comminication
 
-    // deactivate the default sport_mode service
+    std::cout << "Please make sure the robot is lying on the Ground " << std::endl;
+    std::cout << "Press ENTER to deactivate sport_mode automatically" << std::endl;
+    // wait until user press ENTER
+    std::cin.get();
+
+    // deactivate the default sport_mode service automatically
     rsc.SetTimeout(5.0f);
     rsc.Init();
     while(queryServiceStatus("sport_mode"))
     {
-        std::cout<<"Trying to deactivate the service: "<<"sport_mode"<<std::endl;
+        std::cout << "Trying to deactivate the service: " << "sport_mode" << std::endl;
         rsc.ServiceSwitch("sport_mode", 0);  
         sleep(0.5);
     }
     
 }
 
-
+/* the main function to send and receive data */
 void IOSDK::sendRecv(const LowlevelCmd *cmd, LowlevelState *state){
 
     pthread_mutex_lock(&lowlevelmutex);
+
+    /* Send lowCmd */
     for (int i(0); i < 12; ++i)
     {
         // _lowCmd.motor_cmd()[i].mode() = cmd->motorCmd[i].mode;
@@ -204,6 +226,7 @@ void IOSDK::sendRecv(const LowlevelCmd *cmd, LowlevelState *state){
         _lowCmd.motor_cmd()[i].tau() = cmd->motorCmd[i].tau;
     }
 
+    /* Receive lowState of motor */
     for (int i(0); i < 12; ++i)
     {
         state->motorState[i].q = _lowState.motor_state()[i].q();
@@ -212,21 +235,18 @@ void IOSDK::sendRecv(const LowlevelCmd *cmd, LowlevelState *state){
         state->motorState[i].tauEst = _lowState.motor_state()[i].tau_est();
         state->motorState[i].mode = _lowState.motor_state()[i].mode();
     }
-
+    /* Receive lowState of IMU */
     for (int i(0); i < 3; ++i)
     {
         state->imu.quaternion[i] = _lowState.imu_state().quaternion()[i];
         state->imu.gyroscope[i] = _lowState.imu_state().gyroscope()[i];
         state->imu.accelerometer[i] = _lowState.imu_state().accelerometer()[i];
     }
-
     state->imu.quaternion[3] = _lowState.imu_state().quaternion()[3];
-
+    /* Receive lowState of joystick */
     cmdPanel->receiveHandle(&_lowState);
-    // cmdPanel->JoystickHandler(&joystick);
     state->userCmd = cmdPanel->getUserCmd();
     state->userValue = cmdPanel->getUserValue();
-
 
     #ifdef COMPILE_WITH_MOVE_BASE
         _joint_state.header.stamp = ros::Time::now();
@@ -242,8 +262,6 @@ void IOSDK::sendRecv(const LowlevelCmd *cmd, LowlevelState *state){
 
         _pub.publish(_joint_state);
     #endif  // COMPILE_WITH_MOVE_BASE
-
-
 
     pthread_mutex_unlock(&lowlevelmutex);
 }

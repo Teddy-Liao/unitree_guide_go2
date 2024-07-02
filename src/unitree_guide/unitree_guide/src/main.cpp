@@ -62,7 +62,8 @@ int main(int argc, char **argv)
 
 #ifdef COMPILE_WITH_REAL_ROBOT
     #ifdef ROBOT_TYPE_Go2
-        unitree::robot::ChannelFactory::Instance()->Init(0, argv[1]);
+        unitree::robot::ChannelFactory::Instance()->Init(0, argv[1]); 
+        //argv[1] is the address of your own PC, and you can search the address thtough 'ifconfig'
     #endif
     ioInter = new IOSDK();
     ctrlPlat = CtrlPlatform::REALROBOT;
@@ -84,20 +85,20 @@ int main(int argc, char **argv)
     ctrlComp->robotModel = new Go2Robot();
 #endif
 
-    // ctrlComp->waveGen = new WaveGenerator(0.45, 0.5, Vec4(0, 0.5, 0.5, 0)); // Trot
+    ctrlComp->waveGen = new WaveGenerator(0.45, 0.5, Vec4(0, 0.5, 0.5, 0)); // Trot
     // ctrlComp->waveGen = new WaveGenerator(1.1, 0.75, Vec4(0, 0.25, 0.5, 0.75));  //Crawl, only for sim
     // ctrlComp->waveGen = new WaveGenerator(0.4, 0.6, Vec4(0, 0.5, 0.5, 0));  //Walking Trot, only for sim
     // ctrlComp->waveGen = new WaveGenerator(0.4, 0.35, Vec4(0, 0.5, 0.5, 0));  //Running Trot, only for sim
-    ctrlComp->waveGen = new WaveGenerator(0.4, 0.7, Vec4(0, 0, 0, 0));  //Pronk, only for sim
+    // ctrlComp->waveGen = new WaveGenerator(0.4, 0.7, Vec4(0, 0, 0, 0));  //Pronk, only for sim
 
     ctrlComp->geneObj(); // 运行Estimator和BalanceCtrl
 
+    /* this is the main control loop, which enters FSM */
     ControlFrame ctrlFrame(ctrlComp);
 
     signal(SIGINT, ShutDown);
 
-    while (running)
-    {
+    while (running){ // Until user interrupt the script
         ctrlFrame.run(); // 运行FSM中的run()
     }
 
