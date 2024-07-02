@@ -107,4 +107,11 @@ bool FSM::checkSafty(){
     }else{
         return true;
     }
+    /*
+    R = x1*x0, y1*x0, z1*x0
+        x1*y0, y1*y0, z1*y0
+        x1*z0, y1*z0, z1*z0
+    旋转矩阵的(2,2)，即表示旋转后的z轴在原z轴上的投影，即cos值
+    当cos值小于0.5，说明现z轴与原z轴夹角超过60度，不安全
+    */
 }
